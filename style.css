@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h2 {
+    font-size: 20px;
+    background: linear-gradient(to left, #da4b6b,#3b8d99);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to left, #da4b6b,#3b8d99);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.input-field {
+    padding: 4px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.btn {
+    padding: 20px;
+    background: #84afb6;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #43717c;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color:#6da7b6 ;
+}
+body {
+    background-image: url(mountain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: #93bac0;
+}
+.toDoAdded {
+    background: #b3d0f8;
+    list-style-type: none;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    color: #383636;
+    font-size: 20px;
+    border-bottom: 2px solid #ebe5db;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.to-do-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toDoCompleted {
+    background: #d3e9db;
+    color: rgb(160, 155, 155);
+    opacity: 0.6;
+    text-decoration: line-through;
+    transition: all 2s ease;
+}
+@media all and (max-width:800px){
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}
+@media all and (max-width) {
+    h1 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+}
